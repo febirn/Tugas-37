@@ -249,12 +249,6 @@ INSERT INTO returned_items (`returned_id`, `book_id`, `librarian_id`, `quantity`
 	(6, 3, 3, 2, '2017-03-18', '2017-03-18', 0); -- KENA DENDA 5
 
 
--- PERATURAN DENDA
--- 1. <= 3 DENDA 1500
--- 2. >3 && <=5 DENDA 3000
--- 3. >5 && <=7 DENDA 5000
--- 4. >7 && <=14 DENDA 50000
--- 5. >14 && <=30 DENDA 200000
 ALTER TABLE penalties_rules CHANGE noninal nominal INT(11);
 
 INSERT INTO penalties_rules (`number_of_days`,`nominal`) VALUES
