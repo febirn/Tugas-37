@@ -5,7 +5,7 @@ USE db_library;
 CREATE TABLE books (id INT (11) PRIMARY KEY AUTO_INCREMENT, 
 	librarian_id INT (11), author_id INT (11), publisher_id INT (11),
 	place_id INT (11), title VARCHAR (255), sort_desc TEXT, stock INT (11), 
-	date_added TIMESTAMP, date_update DATETIME, deleted INT (11));
+	date_added DATETIME, date_update TIMESTAMP, deleted INT (11));
 
 CREATE TABLE category (id INT (11) PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR (255));
